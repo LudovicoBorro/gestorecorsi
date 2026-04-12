@@ -32,7 +32,7 @@ class View(ft.UserControl):
         self._btnPrintCorsiPD = ft.ElevatedButton(text="Stampa Corsi", on_click=self._controller.handlePrintCorsiPD, width=300)
         self._btnPrintIscrittiCorsiPD = ft.ElevatedButton(text="Stampa numero iscritti", on_click=self._controller.handlePrintIscrittiCorsiPD, width=300)
 
-        row1 = ft.Row([self._ddPD, self._btnPrintCorsiPD, self._btnPrintIscrittiCorsiPD])
+        row1 = ft.Row([self._ddPD, self._btnPrintCorsiPD, self._btnPrintIscrittiCorsiPD], alignment=ft.MainAxisAlignment.CENTER)
 
         # ROW2
 
@@ -41,7 +41,7 @@ class View(ft.UserControl):
         self._btnPrintIscrittiCodins = ft.ElevatedButton(text="Stampa iscritti al corso", on_click=self._controller.handlePrintIscrittiCodins, width=300)
         self._btnPrintCDSCodins = ft.ElevatedButton(text="Stampa corsi di studio afferenti", on_click=self._controller.handlePrintCDSCodins, width=300)
 
-        row2 = ft.Row([self._ddCodins, self._btnPrintIscrittiCodins, self._btnPrintCDSCodins])
+        row2 = ft.Row([self._ddCodins, self._btnPrintIscrittiCodins, self._btnPrintCDSCodins], alignment=ft.MainAxisAlignment.CENTER)
 
         self._page.add(row1, row2)
 
